@@ -8,7 +8,7 @@ def t(n,b):
     return o
 def f(n,a):
     o=""
-    while True:
+    while 1:
         r=n%a
         o=g[r]+o
         n//=a
@@ -16,7 +16,7 @@ def f(n,a):
             break
     return o
 def h(n):
-    while True:
+    while 1:
         try:
             int(n)
         except:
@@ -30,13 +30,13 @@ def h(n):
 b=h(input("from"))
 a=h(input("to"))
 i=input(f"num").upper()
-while True:
-    x=True
+while 1:
+    x=1
     for c in i:
         if c not in g.split(g[b])[0]:
             i=input("no").upper()
-            x=False
-    if x:
+            x=0
+    if x>0:
         break
 d=t(i,b)
 o=f(d,a)
